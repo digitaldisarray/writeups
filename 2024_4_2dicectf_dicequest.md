@@ -35,4 +35,4 @@ After buying "Tame Dragon" and waiting for them to show up, they no longer attac
 Its harder to read in a still image, but the dragons shape out: DICE{YOUR_FLAG_IS_NOT_IN_ANOTHER_CASTLE} however, we do know from the challenge description that it will be in all lower case, so the flag is dice{your_flag_is_not_in_another_castle}
 
 ## Hindsight
-I feel like I did not do the intended solve because this was super quick, about 5 minutes of actual work. Additionally, it was in the rev category and I didn't really do any reversing.
+This felt like a cheesed solution since it was so quick to solve but the creator confirmed it was the intended solution.
