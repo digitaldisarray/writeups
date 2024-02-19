@@ -1,4 +1,4 @@
-# DiceCTF 2024 rev/dicequest writeup
+# DiceCTF Quals 2024 rev/dicequest writeup
 #### Description:
 Try 2024's hottest game so far - DiceQuest! Can you survive the onslaught? Custom sprites made by Gold
 
