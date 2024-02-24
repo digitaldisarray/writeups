@@ -1,12 +1,15 @@
 # DiceCTF Quals 2024 rev/dicequest writeup
-#### Description:
 Try 2024's hottest game so far - DiceQuest! Can you survive the onslaught? Custom sprites made by Gold
 
 note: the flag matches the regex `dice{[a-z_]+}`
-#### Files (.zip archive):
+Files (.zip archive):
  - dicequest: ELF binary x86-64
  - ./assets/: A folder with some sprites
-## Step one: finding out what to do
+
+Solves: 107
+
+## Solution
+#### Step one: finding out what to do
 Upon running the game we are greeted with a player which we can move with WASD, small blue dice which give us points upon collision, as well as a larger blue dice.
 ![Game.png](https://github.com/digitaldisarray/writeups/blob/main/img/dicequest/Game.png?raw=true)
 
@@ -15,7 +18,7 @@ Upon collision with the larger blue dice we are given a shop menu where we can b
 The "Tame Dagon" item is particularly interesting, but how could we possibly collect that many tokens? If only there was a tool that we could use to edit our games memory.  
   
 What does the game mean by "Tame the dragon army" anyways? Well, after standing still in the game for a big a swarm of dragons come out of nowhere and attack you. I guess if we survive the dragons we will get the flag.
-## Step two: scanmem & GameConqueror
+#### Step two: scanmem & GameConqueror
 After some quick googling to find a tool that can help us cheat in linux games, a tool called scanmem and its GUI frontend, GameConqueror show up.   
 Link: https://github.com/scanmem/scanmem  
 
@@ -34,5 +37,5 @@ After buying "Tame Dragon" and waiting for them to show up, they no longer attac
 ![Flag.png](https://github.com/digitaldisarray/writeups/blob/main/img/dicequest/Flag.png?raw=true)  
 Its harder to read in a still image, but the dragons shape out: DICE{YOUR_FLAG_IS_NOT_IN_ANOTHER_CASTLE} however, we do know from the challenge description that it will be in all lower case, so the flag is dice{your_flag_is_not_in_another_castle}
 
-## Hindsight
+#### Hindsight
 This felt like a cheesed solution since it was so quick to solve but the creator confirmed it was the intended solution.
