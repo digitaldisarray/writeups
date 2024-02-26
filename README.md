@@ -6,7 +6,7 @@
 - [rev/dicequest](2024_2_2_dicectf_quals_dicequest.md)
 - web/funnylogin
 - web/dicedicegooser
-- misc/zshfrick
+- [misc/zshfrick](2024_2_2_dicectf_quals_zshfrick.md)
 
 #### LaCTF 2024
 - [rev/aplet321](2024_2_17_lactf_aplet321.md)
