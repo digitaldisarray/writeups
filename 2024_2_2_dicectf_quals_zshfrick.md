@@ -3,7 +3,9 @@ may your code be under par.
 execute the `getflag` binary somewhere in the filesystem to win
 
 Files: jail code
+
 Target: IP + port to netcat into
+
 Solves: 107
 
 
@@ -49,7 +51,7 @@ done
 ```
 
 #### Step one: Find the executable
-The first order of business is to find out where the flag is, which is easy enough.
+The first order of business is to find out where the flag is, which is easy enough.  
 We can pick a charset of `Rls/- ` to execute the command: `ls -R /` on the server  
 Lets just save the output to a file with: `nc target port > file.txt 2>&1`  
 After saving it to a file we can `grep` the file for the `getflag` binary which reveals the location:  
